@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Products</h2>
+  <mat-form-field appearance="fill">
+    <mat-label>Search products</mat-label>
+    <input matInput [(ngModel)]="searchTerm" (input)="searchProducts()">
+  </mat-form-field>
+  <div *ngIf="loading" class="loading">
+    <mat-spinner></mat-spinner>
+  </div>
+  <div *ngIf="noProducts && !loading" class="no-products">No products found.</div>
+  <div *ngIf="!loading && !noProducts" class="product-list">
+    <mat-card *ngFor="let product of filteredProducts" (click)="goToProduct(product.id)" class="product-item">
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <mat-card-content>${{ product.price }}</mat-card-content>
+    </mat-card>
+  </div>
+</div>
