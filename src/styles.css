@@ -1,18 +1,20 @@
 /* Reset default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    color: #333333;
-    background-color: #F5F7FA;
-  }
-  
-  h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif; /* Modern, clean font */
+  color: #263238; /* Dark slate for readability */
+  background: linear-gradient(135deg, #BBDEFB 0%, #4FC3F7 100%); /* Vibrant gradient background */
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; /* Bold, eye-catching font for headings */
+  font-weight: 700;
+  color: #01579B; /* Deep blue for headings */
+}

@@ -11,7 +11,7 @@
   <div *ngIf="!loading && !noProducts" class="product-list">
     <mat-card *ngFor="let product of filteredProducts" (click)="goToProduct(product.id)" class="product-item">
       <mat-card-title>{{ product.name }}</mat-card-title>
-      <mat-card-content>${{ product.price }}</mat-card-content>
+      <mat-card-content>Rs {{ product.price }}</mat-card-content>
     </mat-card>
   </div>
 </div>
